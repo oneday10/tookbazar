@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+   max-width: 1000px;
+
+   height: 100vh;
+   margin: 0 auto;
+   background-image: url("./img/took.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.nav {
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+.nav img {
+   border-radius: 50%;
+   animation: took 1s ease-in-out infinite alternate;
+}
+@keyframes took {
+   0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0);
+   }
+   100% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+   }
+}
+
+.text {
+   text-align: end;
+}
+.text h3 {
+   font-size: 20px;
+}
+
+.text p {
+   background-color: green;
+   border-radius: 5px;
+   color: #fff;
+   padding: 4px;
+   margin-top: 4px;
+}
+
+.content {
+   backdrop-filter: blur(10px);
+   background-color: rgba(0, 0, 0, 0.278);
+   color: #fff;
+   padding: 10px;
+}
+.content p {
+   line-height: 22px;
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
+.whatsapp {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp a {
+   background-color: green;
+   color: #fff;
+   width: 170px;
+   height: 40px;
+   padding: 4px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border-radius: 10px;
+   animation: glow 1.5s ease-in-out infinite alternate;
+   transition: transform 0.2s;
+}
+
+.whatsapp a:hover {
+   transform: scale(1.01);
+}
+
+@keyframes glow {
+   from {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+   }
+   to {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+   }
+}
+
+
+
+
+
+@keyframes moveChick {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .chick-container {
+    position: fixed;
+    bottom: 0;
+    width:200%; /* Удвоенная ширина для плавного цикла */
+    display: flex;
+    gap: 30px;
+    animation: moveChick 20s linear infinite; /* Увеличенное время для более плавного движения */
+  }
+  
+  .chick {
+    width: 62px;
+    height: 62px;
+    background: url('./img/chicken.png') no-repeat center/contain;
+  }
+  
+  .wrapperr {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
